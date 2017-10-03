@@ -1,5 +1,5 @@
 # put this file and 'friend_input.txt' in the model folder
-# run this from terminal with 'python test_make_friends.py friend_input.txt'
+# run this from terminal with 'python test_make_friends.py test_input.txt'
 # first line in file is number of buddies to add as friends
 
 # testing make_friends method from friends module
@@ -7,6 +7,7 @@
 
 import sys
 import unittest
+import ast
 
 from dbus.mainloop.glib import DBusGMainLoop
 from friends import *
@@ -21,20 +22,24 @@ class TestFriends(unittest.TestCase):
         # get name of text file from last command line argument, sys.argv[-1]
         f = open(testCaseFile, "r")
 
-        # first line of file has number of buddies
-        numBuddies = f.readline()
-        buddyList = []
+        #convert string from text file into a list
+        buddyData = ast.literal_eval(f.readline())
+        numBuddies = len(buddyData)
 
-        # create instances of BuddyModel()
-        for x in range(0, int(numBuddies)):
+        #print buddyDatat
+        #print numBuddies
+
+        buddyList = []
+        # create instances of BuddyModel() and store in buddyList
+        for x in range(0, numBuddies):
             buddyList.append(BuddyModel())
 
         # set BuddyModel() attributes from text file
-        for x in range(0, int(numBuddies)):
-            buddyList[x]._account = f.readline().rstrip()
-            buddyList[x]._contact_id = f.readline().rstrip()
-            buddyList[x]._nick = f.readline().rstrip()
-            buddyList[x]._key = f.readline().rstrip()
+        for x in range(0, numBuddies):
+            buddyList[x]._nick = buddyData[x][0]
+            buddyList[x]._key = buddyData[x][1]
+            buddyList[x]._account = buddyData[x][2]
+            buddyList[x]._contact_id = buddyData[x][3]
 
         # create a Friends instance
         # Friends stores friend list as an attribute called _friends
@@ -47,20 +52,17 @@ class TestFriends(unittest.TestCase):
 
         # create expected dictionary from text file data
         expectedFriends = {}
-        for x in range(0, int(numBuddies)):
+        for x in range(0, numBuddies):
             key, value = f.readline().rstrip().split(":")
-            friendValues =  value.split(",")
-            testFriend = FriendBuddyModel(friendValues[0], friendValues[1], friendValues[2],
-                             friendValues[3])
-
-            expectedFriends[key] = testFriend
+            friend = eval(value)
+            expectedFriends[key] = friend
 
         f.close()
-
 
         # test that keys for both dictionaries are equal
         self.assertListEqual(myFriends._friends.keys(), expectedFriends.keys())
 
+        # test the dictionary contents
         for key in myFriends._friends.keys():
             self.assertEqual(myFriends._friends[key].__dict__, expectedFriends[key].__dict__)
 
