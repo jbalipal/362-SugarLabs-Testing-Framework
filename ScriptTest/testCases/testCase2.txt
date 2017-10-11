@@ -1,0 +1,6 @@
+test_make_friend_none
+None type objects should not be accepted as friends.
+Friends.py
+make_friend
+None
+AttributeError
