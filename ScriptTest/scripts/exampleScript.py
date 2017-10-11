@@ -11,7 +11,7 @@ def getFiles(directory):
 
 # parses the test case and returns a list of each line
 def parse(testCase):
-	f = open("/home/joolz/JAB/ScriptTest/testCases/"+testCase, "r")
+	f = open(testCase, "r")
 	lines = []
 	for line in f:
 		lines.append(line.rstrip())
@@ -27,20 +27,21 @@ if __name__ == '__main__':
 	# stores the name of the test cases in testCases
 	testCases = getFiles('testCases')
 	testCases.sort()
-
 	#print testCases
 
-	# change the working directory to executables to run the tests
-	os.chdir('executables')
+	os.chdir('testCases')
 
 	# loop for testing each test case
 	for test in testCases:
-
 		# lines stores the each line of a single test case
 		lines = parse(test)
 		#print lines
 
 		# build the command and execute
+		os.chdir('../executables')
 		command = buildString(lines)
 		print command 
 		os.system(command)
+		os.chdir('../testCases')
+
+		# output stuff goes here?
