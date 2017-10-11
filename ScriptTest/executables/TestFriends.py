@@ -16,7 +16,7 @@
 
 import pytest
 import sys
-sys.path.append('/home/joolz/JAB/ScriptTest/sugar/src/jarabe/model')
+sys.path.append('../sugar/src/jarabe/model')
 from friends import * 
 
 # test for None input
