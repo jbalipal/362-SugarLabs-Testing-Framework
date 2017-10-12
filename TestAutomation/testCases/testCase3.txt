@@ -1,0 +1,6 @@
+test_make_friend_int
+Ints should not be accepted as friends.
+Friends.py
+make_friend
+5846
+AttributeError
