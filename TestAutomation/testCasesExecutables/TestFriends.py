@@ -16,7 +16,9 @@
 
 import pytest
 import sys
-sys.path.append('../sugar/src/jarabe/model')
+
+# need to add this line to import from friends
+sys.path.append('../Project/src/jarabe/model')
 from friends import * 
 
 # test for None input
