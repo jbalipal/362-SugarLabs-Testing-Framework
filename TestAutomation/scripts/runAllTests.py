@@ -19,6 +19,7 @@ def parse(testCase):
 
 # returns the command to execute a test
 def buildString(text):
+	# change retString to something that will work with out current tests
 	retString = 'pytest --cmdInput="' + text[4] + '" TestFriends.py::' + text[0] + ' "-s"'
 	return retString
 
@@ -33,12 +34,12 @@ if __name__ == '__main__':
 
 	# loop for testing each test case
 	for test in testCases:
-		# lines stores the each line of a single test case
+		# lines stores each line of a single test case
 		lines = parse(test)
 		#print lines
 
 		# build the command and execute
-		os.chdir('../executables')
+		os.chdir('../testCasesExecutables')
 		command = buildString(lines)
 		print command 
 		os.system(command)
