@@ -1,4 +1,0 @@
-[["nickOne", "keyOne", "accountOne", "idOne"], ["nickTwo", "keyTwo", "accountTwo", "idTwo"], ["nickThree", "keyThree", "accountThree", "idThree"]]
-keyOne:FriendBuddyModel("nickOne", "keyOne", "accountOne", "idOne")
-keyTwo:FriendBuddyModel("nickTwo", "keyTwo", "accountTwo", "idTwo")
-keyThree:FriendBuddyModel("nickThree", "keyThree", "accountThree", "idThree")
