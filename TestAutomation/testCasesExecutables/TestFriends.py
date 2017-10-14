@@ -16,6 +16,9 @@
 
 import pytest
 import sys
+import warnings
+warnings.filterwarnings("ignore")
+
 
 # need to add this line to import from friends
 sys.path.append('../Project/src/jarabe/model')

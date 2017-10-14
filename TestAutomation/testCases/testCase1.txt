@@ -2,5 +2,5 @@ test_make_friend_string
 Strings should not be accepted as friends.
 Friends.py
 make_friend
-hello goodbye
+"hello goodbye"
 AttributeError
