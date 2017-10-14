@@ -37,12 +37,12 @@ if __name__ == '__main__':
     #print testCases
     os.chdir('reports')
 
-		# delete old output?
+    # delete old output?
     if os.path.isfile("testOutput.html"):
         print "file already exists... deleting and making new testOutput.html"
         os.remove("testOutput.html")
     else:
-		    print "creating new testOutput.html"
+        print "creating new testOutput.html"
 
     f = open("testOutput.html", "w+")
     f.write("<html>")
