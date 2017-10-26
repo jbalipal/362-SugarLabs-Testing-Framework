@@ -1,6 +1,7 @@
-test_make_friend_stringEm
-Empty strings should not be accepted as friends.
+test_make_friend_valid
+Creates a valid Friend object and adds it to Friends
 Friends.py
 make_friend
-   
-AttributeError
+'one', 'keyOne', 'accountOne', 'idOne'
+True
+
