@@ -14,11 +14,11 @@ def test_make_friend_int():
     except AttributeError:
         #print("TEST PASSED")
         #f.write("test_make_friend_int(): TEST PASSED")
-        return "test_make_friend_int(): TEST PASSED"
+        return "Test Passed!"
     except:
         #print("TEST FAILED, EXPECTED AttributeError, BUT WAS " + sys.exc_infor()[0])
         #f.write("test_make_friend_int(): TEST FAILED")
-        return "test_make_friend_int(): TEST FAILED"
+        return "Test Failed"
 
 if __name__ == '__main__':
     #print sys.argv[1]
