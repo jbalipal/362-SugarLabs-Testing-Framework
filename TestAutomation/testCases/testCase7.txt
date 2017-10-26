@@ -1,0 +1,6 @@
+test_has_buddy_valid
+Creates a valid Friend object and adds it to Friends then uses has_buddy to check if it is afriend 
+Friends.py
+has_buddy
+'hey', 'keyTwo', 'accountTwo', 'idTwo'
+True
