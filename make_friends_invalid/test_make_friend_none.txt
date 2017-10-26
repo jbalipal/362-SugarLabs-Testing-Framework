@@ -1,6 +1,0 @@
-test_make_friend_none
-None type objects should not be accepted as friends.
-This tests the Friends module.
-This tests the make_friend method.
-None
-AttributeError
