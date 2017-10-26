@@ -93,7 +93,7 @@ if __name__ == '__main__':
         os.chdir('../testCasesExecutables')
 
         # check_output runs the test lines[0].py with input lines[4] and stores output in testOut 
-        testOut = subprocess.check_output([sys.executable, lines[0] + ".py", lines[4]])
+        testOut = subprocess.check_output([sys.executable, lines[0] + ".py", lines[4], lines[5]])
         
 				# add results to the report
         addTestResult(lines, testOut, fout)
