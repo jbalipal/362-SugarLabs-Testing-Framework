@@ -1,0 +1,2 @@
+<tr><td>test_make_friend_int</td><td>Ints should not be accepted as friends.</td><td>Friends.py</td><td>make_friend</td><td>5846</td><td>AttributeError</td><td>Test Passed!
+</td></tr</br>

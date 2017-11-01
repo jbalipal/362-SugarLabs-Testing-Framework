@@ -1,0 +1,2 @@
+<tr><td>test_has_buddy_valid</td><td>Creates a valid Friend object and adds it to Friends then uses has_buddy to check if it is afriend</td><td>Friends.py</td><td>has_buddy</td><td>'hey', 'keyTwo', 'accountTwo', 'idTwo'</td><td>True</td><td>Test Passed!
+</td></tr</br>
