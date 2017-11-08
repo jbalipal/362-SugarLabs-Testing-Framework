@@ -1,0 +1,2 @@
+<tr><td>test_normalize</td><td>Ensures text is normalized to aid searches</td><td>normalize.py</td><td>normalize_string()</td><td>Hast du die Große Fuge von Beethoven gehört?</td><td>hast du die groe fuge von beethoven gehort?</td><td>Test Passed!
+</td></tr</br>

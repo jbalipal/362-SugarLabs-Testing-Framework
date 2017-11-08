@@ -1,2 +1,2 @@
-<tr><td>test_make_friend_stringEm</td><td>Empty strings should not be accepted as friends.</td><td>Friends.py</td><td>make_friend</td><td></td><td>AttributeError</td><td>TEST PASSED
+<tr><td>test_make_friend_stringEm</td><td>Empty strings should not be accepted as friends.</td><td>Friends.py</td><td>make_friend</td><td></td><td>AttributeError</td><td>Test Passed!
 </td></tr</br>

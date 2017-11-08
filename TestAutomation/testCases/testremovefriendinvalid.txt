@@ -1,0 +1,6 @@
+test_remove_friend_invalid
+Ensures non-existent friends cannot be removed
+Friends.py
+remove_friend
+'one', 'keyOne', 'accountOne', 'idOne'
+global name 'friend2' is not defined global name 'friend2' is not defined

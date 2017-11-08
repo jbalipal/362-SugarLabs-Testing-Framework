@@ -18,7 +18,7 @@ def test_make_friend_stringEm():
         myFriends = Friends()
         myFriends.make_friend(sys.argv[1])
     except AttributeError:
-        print("TEST PASSED")
+        print("Test Passed!")
         f.write("test_make_friend_stringEm(): TEST PASSED")
     except:
         print("TEST FAILED, EXPECTED AttributeError, BUT WAS " + sys.exc_infor()[0])

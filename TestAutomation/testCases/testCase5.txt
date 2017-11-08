@@ -1,7 +1,7 @@
 test_remove_friend
 Adds then removes Friend objects and ensures data is correct
 Friends.py
-make_friend
+remove_friend
 'one', 'keyOne', 'accountOne', 'idOne'
 False
 

@@ -1,2 +1,2 @@
-<tr><td>test_remove_friend</td><td>Adds then removes Friend objects and ensures data is correct</td><td>Friends.py</td><td>make_friend</td><td>'one', 'keyOne', 'accountOne', 'idOne'</td><td>False</td><td>Test Passed!
+<tr><td>test_remove_friend</td><td>Adds then removes Friend objects and ensures data is correct</td><td>Friends.py</td><td>remove_friend</td><td>'one', 'keyOne', 'accountOne', 'idOne'</td><td>False</td><td>Test Passed!
 </td></tr</br>

@@ -1,0 +1,2 @@
+<tr><td>test_remove_friend_invalid</td><td>Ensures non-existent friends cannot be removed</td><td>Friends.py</td><td>remove_friend</td><td>'one', 'keyOne', 'accountOne', 'idOne'</td><td>global name 'friend2' is not defined global name 'friend2' is not defined</td><td>Test Passed!
+</td></tr</br>
