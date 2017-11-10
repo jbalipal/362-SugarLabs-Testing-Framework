@@ -23,7 +23,7 @@ def test_make_friend_valid():
         return "Test Passed!"
 
     except:
-        return "Test Failed!"
+        return "Test Failed! Expected: " + sys.argv[2] + " but was: " + str(test)
 
 if __name__ == '__main__':
     test_make_friend_valid()

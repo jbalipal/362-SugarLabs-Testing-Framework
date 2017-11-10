@@ -11,6 +11,7 @@ def test_remove_friend_invalid():
     arguments = sys.argv[1].split(",")
     try:
         friend1 = FriendBuddyModel(arguments[0], arguments[1], arguments[2], arguments[3])
+        friend2 = FriendBuddyModel(arguments[0], arguments[1], arguments[2], arguments[3])
         os.chdir('../reports')
         f = open("testOutput.html", "a+")
         myFriends = Friends()
@@ -21,11 +22,12 @@ def test_remove_friend_invalid():
         strError = str((exception))
         
     try:
-        strError == sys.argv[2]
-        return "Test Passed!"
+        str(test) == sys.argv[2]
+        return "Test Passed!" 
 
     except:
-        return "Test Failed!"
+        return "Test Failed! Expected: " + sys.argv[2] + " but was: " + str(test)
+
 
 if __name__ == '__main__':
     test_remove_friend_invalid()

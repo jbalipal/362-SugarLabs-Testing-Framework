@@ -1,0 +1,6 @@
+test_keepicon_getHeight
+ensures that correct default height is gathered on keepicon initialization
+keepicon.py
+do_get_preferred_height
+
+75

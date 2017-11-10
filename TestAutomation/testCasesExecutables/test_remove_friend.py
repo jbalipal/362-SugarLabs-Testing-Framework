@@ -20,11 +20,11 @@ def test_remove_friend():
     except Exception as exception:
         print(exception)
     try:
-        str(test) == sys.argv[2]
+        assert str(test) == sys.argv[2]
         return "Test Passed!"
 
     except:
-        return "Test Failed!"
+        return "Test Failed! Expected: " + sys.argv[2] + " but was: " + str(test)
 
 if __name__ == '__main__':
     test_remove_friend()

@@ -1,4 +1,4 @@
-test_normalize
+test_normalize_passive
 Ensures normalized text is not altered
 normalize.py
 normalize_string()
