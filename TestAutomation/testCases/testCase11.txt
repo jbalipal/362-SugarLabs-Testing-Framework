@@ -1,0 +1,6 @@
+test_add_current_buddy
+creates a buddy object and then adds it to the current buddies list.
+neighborhood.py
+add_current_buddy
+'actID222', 'hand2', 'Bobby'
+Bobby

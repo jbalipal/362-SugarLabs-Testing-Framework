@@ -1,0 +1,6 @@
+test_add_buddy
+Creates a valid buddy object then adds it to a neighbor hood 
+neighborhood.py
+add_buddy
+'actID222', 'hand2', 'Nick'
+Nick
