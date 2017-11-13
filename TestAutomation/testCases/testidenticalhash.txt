@@ -1,0 +1,6 @@
+test_add_clipboard_identicalHash
+Ensures that no two objects can be hashed to the same index
+clipboard.py
+add_object
+"Name of object to add",34,"Second object to add",34
+None
