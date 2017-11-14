@@ -1,0 +1,2 @@
+<HR WIDTH="500px" ALIGN="LEFT" SIZE="3"><b>Test Name:</b> test_make_friend_stringEm<br/><b>Requirement:</b> Empty strings should not be accepted as friends.<br/><b>Component:</b> Friends.py<br/><b>Method:</b> make_friend<br/><b>Input(s):</b> <br/><b>Expected Outcome:</b> AttributeError<br/><b>Test Result:</b> TEST PASSED
+<br/><br/>
