@@ -16,8 +16,12 @@ if __name__ == '__main__':
     testCases.sort()
 
     os.chdir('testCases')
+    
+		# tracks number of tests
+    testNum = 0
     # loop for testing each test case
     for test in testCases:
+        testNum += 1
         # lines stores each line of a single test case
         lines = parse(test)
 
@@ -28,7 +32,7 @@ if __name__ == '__main__':
         
         # create individual test result
         os.chdir('../temp')
-        makeTestResult(lines, testOut, test[:-4]+"Result.txt")
+        makeTestResult(lines, testOut, test[:-4]+"Result.txt", testNum)
 
         os.chdir('../testCases')
 
