@@ -1,0 +1,6 @@
+test_normalize
+Ensures text is normalized to aid searches
+normalize.py
+normalize_string()
+Hast du die Große Fuge von Beethoven gehört?
+hast du die groe fuge von beethoven gehort?

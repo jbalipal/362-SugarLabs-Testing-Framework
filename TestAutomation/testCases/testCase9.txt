@@ -1,0 +1,6 @@
+test_add_buddy_mult
+creates multiple buddy objects and adds them to neighborhood.
+neighborhood.py
+add_buddy
+'actID222', 'hand2', 'Nick', 'Jason'
+Nick, Jason

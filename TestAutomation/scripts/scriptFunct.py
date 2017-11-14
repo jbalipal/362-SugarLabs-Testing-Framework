@@ -53,24 +53,25 @@ def initializeReport(fileName, numCases):
     fout.write("</head>")
     fout.write("<body>")
     fout.write("<p>")
-    fout.write("Results for " + str(numCases) + " test case(s)")
-    fout.write("<br>")
-    fout.write("<br>")
+    fout.write("<table border = 1>")
+    fout.write("<tr><th>Test Name</th><th>Requirement</th><th>Component</     th><th>Method</th><th>Inputs</th><th>Expected Outputs</th><th>Test Result</th></tr>")
 
     return fout
 
 # adds test results to the output file
 def makeTestResult(testCaseInfo, result, outputFile):
     f = open(outputFile, "w+")
-    f.write('<HR WIDTH="500px" ALIGN="LEFT" SIZE="3">')
-    f.write("<b>Test Name:</b> " + testCaseInfo[0] + "<br/>")
-    f.write("<b>Requirement:</b> " + testCaseInfo[1] + "<br/>")
-    f.write("<b>Component:</b> " + testCaseInfo[2] + "<br/>")
-    f.write("<b>Method:</b> " + testCaseInfo[3] + "<br/>")
-    f.write("<b>Input(s):</b> " + testCaseInfo[4] + "<br/>")
-    f.write("<b>Expected Outcome:</b> " + testCaseInfo[5] + "<br/>")
-    f.write("<b>Test Result:</b> " + result + "<br/>")
-    f.write("<br/>")
+    
+    f.write("<tr>")
+    f.write("<td>" + testCaseInfo[0] + "</td>")
+    f.write("<td>" + testCaseInfo[1] + "</td>")
+    f.write("<td>" + testCaseInfo[2] + "</td>")
+    f.write("<td>" + testCaseInfo[3] + "</td>")
+    f.write("<td>" + testCaseInfo[4] + "</td>")
+    f.write("<td>" + testCaseInfo[5] + "</td>")
+    f.write("<td>" + result + "</td>")
+    f.write("</tr")
+    f.write("</br>")
     f.close()
 
 # create test report 

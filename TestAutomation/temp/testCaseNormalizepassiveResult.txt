@@ -1,0 +1,2 @@
+<tr><td>test_normalize_passive</td><td>Ensures normalized text is not altered</td><td>normalize.py</td><td>normalize_string()</td><td>no unicode here</td><td>no unicode here</td><td>Test Passed!
+</td></tr</br>

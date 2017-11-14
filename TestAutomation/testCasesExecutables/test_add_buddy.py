@@ -1,30 +1,31 @@
+import os
 import sys
 import warnings
 from dbus.mainloop.glib import DBusGMainLoop
 warnings.filterwarnings("ignore")
 
 sys.path.append('../Project/src/jarabe/model')
-from friends import *
+from neighborhood import *
 
-def test_remove_friend():
+def test_add_buddy():
     mainloop = DBusGMainLoop(set_as_default=True)
     arguments = sys.argv[1].split(",")
     try:
-        friend1 = FriendBuddyModel(arguments[0], arguments[1], arguments[2], arguments[3])
+        actMod = ActivityModel(arguments[0], arguments[1])
+        buddy = arguments[2]
         os.chdir('../reports')
         f = open("testOutput.html", "a+")
-        myFriends = Friends()
-        myFriends.make_friend(friend1)
-        test = (myFriends.has_buddy(friend1))
+        actMod.add_buddy(buddy)
+        test = (actMod.get_buddies())
     except Exception as exception:
         print(exception)
     try:
-        assert str(test) == sys.argv[2]
+        str(test) == sys.argv[2]
         return "Test Passed!"
 
     except:
-        return "Test Failed! Expected: " + sys.argv[2] + " but was: " + str(test)
+        return "Test Failed!"
 
 if __name__ == '__main__':
-    test_remove_friend()
-    print(test_remove_friend())
+    test_add_buddy()
+    print(test_add_buddy())

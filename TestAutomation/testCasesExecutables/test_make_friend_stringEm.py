@@ -12,17 +12,16 @@ from friends import *
 
 def test_make_friend_stringEm():
     os.chdir('../reports')
-    f = open("testOutput.html", "a+")
-    #os.chdir('../testCasesExecutables')
+
     try:
         myFriends = Friends()
         myFriends.make_friend(sys.argv[1])
     except AttributeError:
-        print("TEST PASSED")
-        f.write("test_make_friend_stringEm(): TEST PASSED")
+        print("Test Passed!")
+
     except:
         print("TEST FAILED, EXPECTED AttributeError, BUT WAS " + sys.exc_infor()[0])
-        f.write("test_make_friend_stringEm(): TEST FAILED")
+
 
 if __name__ == '__main__':
     test_make_friend_stringEm()

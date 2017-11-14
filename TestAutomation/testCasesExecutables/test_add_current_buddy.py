@@ -1,19 +1,22 @@
+import os
 import sys
 import warnings
-from notifications import NotificationService
-#from dbus.mainloop.glib import DBusGMainLoop
+from dbus.mainloop.glib import DBusGMainLoop
 warnings.filterwarnings("ignore")
 
 sys.path.append('../Project/src/jarabe/model')
+from neighborhood import *
 
-def test_notifications_notify():
- #   mainloop = DBusGMainLoop(set_as_default=True)
+def test_add_current_buddy():
+    mainloop = DBusGMainLoop(set_as_default=True)
     arguments = sys.argv[1].split(",")
     try:
-        note = Notify(arguments[0], arguments[1], arguments[2], arguments[3], arguments[4], arguments[5], arguments[6], arguments[7])
-        print(note)
+        actMod = ActivityModel(arguments[0], arguments[1])
+        buddy = arguments[2]
         os.chdir('../reports')
         f = open("testOutput.html", "a+")
+        actMod.add_current_buddy(buddy)
+        test = (actMod.get_current_buddies())
     except Exception as exception:
         print(exception)
     try:
@@ -24,5 +27,5 @@ def test_notifications_notify():
         return "Test Failed!"
 
 if __name__ == '__main__':
-    test_notifications_notify()
-    print(test_notifications_notify())
+    test_add_current_buddy()
+    print(test_add_current_buddy())

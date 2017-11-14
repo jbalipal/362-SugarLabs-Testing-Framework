@@ -1,0 +1,6 @@
+test_remove_current_buddy
+creates multiple current buddy objects and adds them to neighborhood then removes one of them.
+neighborhood.py
+remove_current_buddy
+'actID222', 'hand2', 'Bobby', 'Alex'
+Bobby

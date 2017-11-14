@@ -1,0 +1,6 @@
+test_add_to_clipboard_hashSpecified
+Ensures that object is added to specified hash index
+clipboard.py
+add_object
+"Name of object to add",34
+34

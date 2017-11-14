@@ -1,0 +1,6 @@
+test_keepicon_getWidth
+ensures that correct default height is gathered on keepicon initialization
+keepicon.py
+do_get_preferred_width
+
+75

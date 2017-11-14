@@ -1,0 +1,6 @@
+test_normalize_passive
+Ensures normalized text is not altered
+normalize.py
+normalize_string()
+no unicode here
+no unicode here
