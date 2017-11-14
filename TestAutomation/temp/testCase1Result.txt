@@ -1,2 +1,7 @@
+<<<<<<< HEAD
+<HR WIDTH="500px" ALIGN="LEFT" SIZE="3"><b>Test Name:</b> test_make_friend_string<br/><b>Requirement:</b> Strings should not be accepted as friends.<br/><b>Component:</b> Friends.py<br/><b>Method:</b> make_friend<br/><b>Input(s):</b> "hello goodbye"<br/><b>Expected Outcome:</b> AttributeError<br/><b>Test Result:</b> Test Passed
+<br/><br/>
+=======
 <tr><td>test_make_friend_string</td><td>Strings should not be accepted as friends.</td><td>Friends.py</td><td>make_friend</td><td>"hello goodbye"</td><td>AttributeError</td><td>Test Passed
 </td></tr</br>
+>>>>>>> ae1b7f9f0fa688a0960fe37cefc7f020034c9609

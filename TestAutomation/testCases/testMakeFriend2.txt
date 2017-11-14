@@ -1,0 +1,6 @@
+test_make_friend_bool
+Booleans should not be accepted as friends.
+Friends.py
+make_friend
+True
+AttributeError
