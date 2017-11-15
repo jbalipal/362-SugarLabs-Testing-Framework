@@ -1,7 +1,2 @@
-<<<<<<< HEAD
-<HR WIDTH="500px" ALIGN="LEFT" SIZE="3"><b>Test Name:</b> test_remove_friend<br/><b>Requirement:</b> Adds then removes Friend objects and ensures data is correct<br/><b>Component:</b> Friends.py<br/><b>Method:</b> make_friend<br/><b>Input(s):</b> 'one', 'keyOne', 'accountOne', 'idOne'<br/><b>Expected Outcome:</b> False<br/><b>Test Result:</b> Test Passed!
-<br/><br/>
-=======
-<tr><td>test_remove_friend</td><td>Adds then removes Friend objects and ensures data is correct</td><td>Friends.py</td><td>remove_friend</td><td>'one', 'keyOne', 'accountOne', 'idOne'</td><td>False</td><td>Test Passed!
+<tr><td>7</td><td>test_remove_friend</td><td>Adds then removes Friend objects and ensures data is correct</td><td>Friends.py</td><td>remove_friend</td><td>'one', 'keyOne', 'accountOne', 'idOne'</td><td>False</td><td>Test Failed!: <type 'exceptions.KeyError'>
 </td></tr</br>
->>>>>>> ae1b7f9f0fa688a0960fe37cefc7f020034c9609

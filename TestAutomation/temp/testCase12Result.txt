@@ -1,0 +1,2 @@
+<tr><td>3</td><td>test_add_current_buddy_mult</td><td>creates multiple current buddy objects and adds them to neighborhood.</td><td>neighborhood.py</td><td>add_current_buddy</td><td>'actID222', 'hand2', 'Bobby', 'Alexander'</td><td>Bobby, Alexander</td><td>Test Passed!
+</td></tr</br>

@@ -1,0 +1,2 @@
+<tr><td>21</td><td>test_add_to_clipboard_hashSpecified</td><td>Ensures that object is added to specified hash index</td><td>clipboard.py</td><td>add_object</td><td>"Name of object to add",34</td><td>34</td><td>Test Passed
+</td></tr</br>

@@ -1,0 +1,2 @@
+<tr><td>22</td><td>test_add_clipboard_identicalHash</td><td>Ensures that no two objects can be hashed to the same index</td><td>clipboard.py</td><td>add_object</td><td>"Name of object to add",34,"Second object to add",34</td><td>None</td><td>Test Failed! Expected: None but got: 34
+</td></tr</br>

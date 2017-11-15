@@ -9,6 +9,7 @@ from friends import *
 def test_remove_friend_invalid():
     mainloop = DBusGMainLoop(set_as_default=True)
     arguments = sys.argv[1].split(",")
+    test = "null"
     try:
         friend1 = FriendBuddyModel(arguments[0], arguments[1], arguments[2], arguments[3])
         friend2 = FriendBuddyModel(arguments[0], arguments[1], arguments[2], arguments[3])
@@ -17,12 +18,12 @@ def test_remove_friend_invalid():
         myFriends = Friends()
         myFriends.make_friend(friend1)
         myFriends.remove(friend1)
-        test = (myFriends.has_buddy(friend2))
+        test = str((myFriends.has_buddy(friend2)))
     except Exception as exception:
-        strError = str((exception))
+        return("Test Failed!: Exception: " +str(exception))
         
     try:
-        str(test) == sys.argv[2]
+        test == sys.argv[2]
         return "Test Passed!" 
 
     except:

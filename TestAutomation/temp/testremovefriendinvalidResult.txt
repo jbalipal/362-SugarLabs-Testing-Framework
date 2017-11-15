@@ -1,2 +1,2 @@
-<tr><td>test_remove_friend_invalid</td><td>Ensures non-existent friends cannot be removed</td><td>Friends.py</td><td>remove_friend</td><td>'one', 'keyOne', 'accountOne', 'idOne'</td><td>False</td><td>Test Passed!
+<tr><td>25</td><td>test_remove_friend_invalid</td><td>Ensures non-existent friends cannot be removed</td><td>Friends.py</td><td>remove_friend</td><td>'one', 'keyOne', 'accountOne', 'idOne'</td><td>False</td><td>Test Failed!: " 'keyOne'"
 </td></tr</br>

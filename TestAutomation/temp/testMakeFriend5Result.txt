@@ -1,0 +1,2 @@
+<tr><td>15</td><td>test_make_friend_valid</td><td>Creates a valid Friend object and adds it to Friends</td><td>Friends.py</td><td>make_friend</td><td>'one', 'keyOne', 'accountOne', 'idOne'</td><td>True</td><td>Test Passed!
+</td></tr</br>

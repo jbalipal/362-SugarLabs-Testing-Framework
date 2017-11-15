@@ -1,0 +1,2 @@
+<tr><td>17</td><td>test_add_to_clipboard</td><td>Ensures that an object can be added to clipboard, and that an objectID is returned</td><td>clipboard.py</td><td>add_object</td><td>"Name of object to add"</td><td>1</td><td>Test Passed
+</td></tr</br>

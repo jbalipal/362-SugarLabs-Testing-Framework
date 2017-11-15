@@ -27,4 +27,6 @@ def normalize_string(unicode_string):
     'abaco'
 
     """
+    
     return normalize('NFKD', unicode_string).encode('ASCII', 'ignore').lower()
+

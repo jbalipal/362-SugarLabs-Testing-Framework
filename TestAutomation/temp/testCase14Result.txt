@@ -1,0 +1,2 @@
+<tr><td>5</td><td>test_birth_timestamp</td><td>Tests the agepicker method calculate_birth_timestamp</td><td>agepicker.py</td><td>calculate_birth_timestamp</td><td>5</td><td>5</td><td>Test Passed!
+</td></tr</br>

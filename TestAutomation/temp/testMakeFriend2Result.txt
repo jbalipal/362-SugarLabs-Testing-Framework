@@ -1,0 +1,2 @@
+<tr><td>12</td><td>test_make_friend_bool</td><td>Booleans should not be accepted as friends.</td><td>Friends.py</td><td>make_friend</td><td>True</td><td>AttributeError</td><td>Test Passed!
+</td></tr</br>

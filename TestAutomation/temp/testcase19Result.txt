@@ -1,0 +1,2 @@
+<tr><td>20</td><td>test_delete_clipboard</td><td>Ensures objects are removed from clipboard</td><td>clipboard.py</td><td>delete_object</td><td>"Name of object to add",34</td><td>IndexError</td><td>Test Passed!
+</td></tr</br>
