@@ -1,6 +1,0 @@
-test_delete_clipboard
-Ensures objects are removed from clipboard
-clipboard.py
-delete_object
-"Name of object to add",34
-IndexError

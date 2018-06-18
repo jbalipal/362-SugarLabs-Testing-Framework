@@ -1,6 +1,0 @@
-test_add_to_clipboard
-Ensures that an object can be added to clipboard, and that an objectID is returned
-clipboard.py
-add_object
-"Name of object to add"
-1
